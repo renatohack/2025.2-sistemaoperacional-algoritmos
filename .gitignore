@@ -2,3 +2,4 @@ token.txt
 *.csv
 *.p
 *.pkl
+arquivo_*
