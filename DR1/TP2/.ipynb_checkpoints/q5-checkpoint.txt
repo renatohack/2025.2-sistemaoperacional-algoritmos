@@ -1,0 +1,12 @@
+Tabelas hash armazenam pares (chave → valor) em um array, onde o índice é calculado por uma função de hash. Isso torna a busca muito rápida, pois transforma procurar por chave em acessar diretamente uma posição.
+
+:: Operações médias: busca, inserção e remoção em O(1)
+:: Isso depende de uma função de hash bem distribuída
+:: O fator de carga (numero de elementos / tamanho da tabela) deve ser mantido baixo (geralmente <= 0.75)
+:: Colisões podem acontecer (duas chaves no mesmo índice) e são tratadas com:
+    >> Encadeamento (listas em cada posição)
+    >> Endereçamento aberto (procurar outra posição no array)
+:: Pior caso teórico: O(n) se todas as chaves colidirem
+:: Vantagem principal: evita varrer listas ou árvores, pois calcula onde o item deve estar
+
+Em resumo, tabelas hash entregam alta eficiência porque transformam "procurar" em "calcular onde está", com desempenho médio constante.

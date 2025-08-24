@@ -1,0 +1,19 @@
+Selection Sort
+:: Ideia: para cada posição i, encontrar o menor elemento do sufixo i..n-1 e trocar com a posição i
+:: Comparações: (n-1) + (n-2) + ... + 1 = O(n^2)
+:: Trocas: no máximo n-1
+:: Tempo: pior, médio e melhor caso = O(n^2)
+:: Espaço: O(1), pois é in-place
+:: Estabilidade: não é estável, pois a troca pode inverter elementos iguais
+
+Insertion Sort
+:: Ideia: constrói um prefixo ordenado e insere o elemento atual deslocando os maiores
+:: Melhor caso (lista já ordenada): O(n)
+:: Médio caso (lista aleatória): O(n^2)
+:: Pior caso (lista invertida): O(n^2)
+:: Espaço: O(1), pois é in-place
+:: Estabilidade: é estável, pois mantém a ordem de elementos iguais
+
+Key points
+:: Para listas pequenas ou quase ordenadas, insertion sort pode ser muito bom (O(n) no melhor caso)
+:: Selection sort tem custo fixo O(n^2), mas faz poucas trocas, útil quando trocar é caro e comparar é barato

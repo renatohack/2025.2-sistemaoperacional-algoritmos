@@ -1,0 +1,6 @@
+A análise de complexidade (tipicamente em notação Big‑O) estima como tempo e memória crescem com o tamanho da entrada n. Com isso é possível:
+
+:: Comparar alternativas: escolher entre diferentes algoritmos/estruturas para o mesmo problema (ex.: O(nlogn) vs O(n2)).
+:: Prever escalabilidade: saber quando um método deixará de ser viável conforme os dados crescem.
+:: Guiar otimizações: focar onde o custo assintótico domina (laços aninhados, recomputações, estruturas inadequadas).
+:: Justificar trocas: aceitar maior uso de memória por menor tempo (ou vice‑versa) quando compensa.
