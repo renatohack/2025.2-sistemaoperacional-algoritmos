@@ -1,3 +1,0 @@
-Bubble Sort: 0.000720 segundos
-Selection Sort: 2.620827 segundos
-Insertion Sort: 0.001232 segundos

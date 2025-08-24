@@ -1,0 +1,24 @@
+Construção Hashtable: 0.004189 s | pico 574.7 KB
+Construção Pilha: 0.000147 s | pico 78.6 KB
+Construção Fila: 0.000092 s | pico 81.5 KB
+Hashtable - get pos 1: 0.000002 s | pico 0.4 KB
+Hashtable - get pos 100: 0.000000 s | pico 0.0 KB
+Hashtable - get pos 1000: 0.000001 s | pico 0.0 KB
+Hashtable - get pos 5000: 0.000000 s | pico 0.0 KB
+Hashtable - get pos ultima: 0.000002 s | pico 0.0 KB
+Pilha - get pos 1: 0.000003 s | pico 0.4 KB
+Pilha - get pos 100: 0.000001 s | pico 0.0 KB
+Pilha - get pos 1000: 0.000001 s | pico 0.0 KB
+Pilha - get pos 5000: 0.000001 s | pico 0.0 KB
+Pilha - get pos ultima: 0.000000 s | pico 0.0 KB
+Fila - get pos 1: 0.000023 s | pico 0.4 KB
+Fila - get pos 100: 0.000002 s | pico 0.0 KB
+Fila - get pos 1000: 0.000001 s | pico 0.0 KB
+Fila - get pos 5000: 0.000001 s | pico 0.0 KB
+Fila - get pos ultima: 0.000001 s | pico 0.0 KB
+Hashtable - add: 0.000087 s | pico 8.7 KB
+Hashtable - remove: 0.000028 s | pico 0.6 KB
+Pilha - push: 0.000066 s | pico 93.9 KB
+Pilha - pop: 0.000007 s | pico 0.5 KB
+Fila - enqueue: 0.000076 s | pico 6.5 KB
+Fila - dequeue: 0.000011 s | pico 0.5 KB
