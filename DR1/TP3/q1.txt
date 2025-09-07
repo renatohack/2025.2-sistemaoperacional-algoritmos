@@ -1,0 +1,8 @@
+Recursão é uma forma de resolver problemas dividindo-os em versões menores e semelhantes ao problema original. Ou seja, você pega uma questão grande e a quebra em partes mais simples, até chegar em uma situação básica (o caso base) que pode ser resolvida diretamente.
+
+Em palavras simples: problemas que podem ser resolvidos por recursão são aqueles em que a solução depende da solução de subproblemas iguais ao inicial, mas em menor escala.
+
+Exemplos clássicos:
+
+Fatorial: calcular n! depende de calcular (n-1)!.
+Fibonacci: o termo F(n) depende de F(n-1) e F(n-2).
