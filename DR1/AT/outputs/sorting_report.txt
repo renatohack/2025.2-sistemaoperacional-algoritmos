@@ -1,0 +1,50 @@
+Selection Sort | n=100 | tempo=0.0002s
+Insertion Sort | n=100 | tempo=0.0002s
+Bubble Sort | n=100 | tempo=0.0004s
+Merge Sort | n=100 | tempo=0.0002s
+Quick Sort | n=100 | tempo=0.0001s
+Selection Sort | n=500 | tempo=0.0052s
+Insertion Sort | n=500 | tempo=0.0054s
+Bubble Sort | n=500 | tempo=0.0106s
+Merge Sort | n=500 | tempo=0.0009s
+Quick Sort | n=500 | tempo=0.0005s
+Selection Sort | n=1000 | tempo=0.0210s
+Insertion Sort | n=1000 | tempo=0.0234s
+Bubble Sort | n=1000 | tempo=0.0465s
+Merge Sort | n=1000 | tempo=0.0019s
+Quick Sort | n=1000 | tempo=0.0011s
+Selection Sort | n=5000 | tempo=0.5527s
+Insertion Sort | n=5000 | tempo=0.6413s
+Bubble Sort | n=5000 | tempo=1.3383s
+Merge Sort | n=5000 | tempo=0.0115s
+Quick Sort | n=5000 | tempo=0.0067s
+Selection Sort | n=10000 | tempo=2.1431s
+Insertion Sort | n=10000 | tempo=2.5543s
+Bubble Sort | n=10000 | tempo=5.4466s
+Merge Sort | n=10000 | tempo=0.0247s
+Quick Sort | n=10000 | tempo=0.0149s
+Selection Sort | n=20000 | tempo=8.7342s
+Insertion Sort | n=20000 | tempo=10.4840s
+Bubble Sort | n=20000 | tempo=22.2671s
+Merge Sort | n=20000 | tempo=0.0532s
+Quick Sort | n=20000 | tempo=0.0339s
+Selection Sort | n=50000 | tempo=56.1362s
+Insertion Sort | n=50000 | tempo=65.5095s
+Bubble Sort | n=50000 | tempo=139.3793s
+Merge Sort | n=50000 | tempo=0.1435s
+Quick Sort | n=50000 | tempo=0.0858s
+Selection Sort | n=100000 | tempo=228.5537s
+Insertion Sort | n=100000 | tempo=272.9965s
+Bubble Sort | n=100000 | tempo=562.9217s
+Merge Sort | n=100000 | tempo=0.3113s
+Quick Sort | n=100000 | tempo=0.1937s
+
+Resumo geral:
+Selection Sort: executado ate n=100000 com tempo final de 228.5537s
+Insertion Sort: executado ate n=100000 com tempo final de 272.9965s
+Bubble Sort: executado ate n=100000 com tempo final de 562.9217s
+Merge Sort: executado ate n=100000 com tempo final de 0.3113s
+Quick Sort: executado ate n=100000 com tempo final de 0.1937s
+
+Conclusao: algoritmos quadraticos demoram muito para entradas grandes, enquanto Merge Sort e Quick Sort mantem tempos baixos mesmo com 100000 elementos.
+Graficos gerados: `sorting_times_n2.png` para os algoritmos O(n^2) e `sorting_times_nlogn.png` para os algoritmos com comportamento proximo de n log n.

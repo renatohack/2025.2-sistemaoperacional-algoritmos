@@ -1,0 +1,4 @@
+Exercicio 4a: Se as ultimas letras das cadeias forem iguais, elas pertencem a uma subsequencia comum maxima e o problema continua com os prefixos. Caso contrario, comparamos as respostas obtidas ao ignorar a ultima letra de cada cadeia.
+Exercicio 4b: comprimento encontrado pela recursao = 4
+Exercicio 4c: comprimento otimo = 4
+Exercicio 4d: subsequencia reconstruida = BCBA
