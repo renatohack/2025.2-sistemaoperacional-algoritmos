@@ -43,10 +43,10 @@ usando o mesmo conjunto de dados para permitir uma comparação direta.'''
 
 
 '''(d) Resultados medidos no mesmo vetor de 1.000.000 elementos (float64):
-Tempo médio Python puro: 0.076897 s
-Tempo médio Numba: 0.000410 s
-Aceleração estimada: 187.46x
-Discussão: a implementação com Numba ficou cerca de 187x mais rápida, pois o loop
+Tempo médio Python puro: 0.145054 s
+Tempo médio Numba: 0.000219 s
+Aceleração estimada: 661.47x
+Discussão: a implementação com Numba ficou cerca de 660x mais rápida, pois o loop
 foi compilado para código nativo e distribuído em múltiplos núcleos. Já a versão
 em Python puro executa cada iteração de forma interpretada, acumulando mais
 sobrecarga. Diferenças menores podem surgir entre execuções por conta de ruído de
@@ -78,4 +78,3 @@ if __name__ == "__main__":
     print(f"Tempo médio Numba: {tempo_numba:.6f} s")
     aceleracao = tempo_python / tempo_numba if tempo_numba else float('inf')
     print(f"Aceleração estimada: {aceleracao:.2f}x")
-    print("Observação: tempos podem variar com hardware e carga do sistema.")
