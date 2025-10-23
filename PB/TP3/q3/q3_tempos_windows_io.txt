@@ -1,0 +1,20 @@
+Resultados IO-bound
+Sistema operacional: Windows
+Iteracoes: 1000000
+Repeticoes: 6
+
+Sem Numba IO
+Tempos (s): 2.752434, 2.692338, 2.633857, 2.628408, 2.636782, 2.619676
+Estimativas: 3.141364, 3.142344, 3.142092, 3.141096, 3.142340, 3.140384
+Arquivos: results_sem_numba_run1.txt, results_sem_numba_run2.txt, results_sem_numba_run3.txt, results_sem_numba_run4.txt, results_sem_numba_run5.txt, results_sem_numba_run6.txt
+
+Concurrent IO
+Tempos (s): 2.257427, 2.868575, 2.844757, 2.799825, 2.837954, 2.739217
+Estimativas: 3.140376, 3.139248, 3.139296, 3.144800, 3.140420, 3.139976
+Arquivos: results_concurrent_run1.txt, results_concurrent_run2.txt, results_concurrent_run3.txt, results_concurrent_run4.txt, results_concurrent_run5.txt, results_concurrent_run6.txt
+
+Numba IO
+Tempos (s): 3.872378, 3.815110, 3.762660, 3.783775, 3.894341, 5.361911
+Estimativas: 3.143640, 3.141652, 3.142852, 3.140392, 3.140996, 3.139240
+Arquivos: results_numba_run1.txt, results_numba_run2.txt, results_numba_run3.txt, results_numba_run4.txt, results_numba_run5.txt, results_numba_run6.txt
+
