@@ -1,0 +1,8 @@
+1) Rede densa com 50 pessoas  
+Para esse tamanho e densidade eu guardaria as amizades em uma matriz de adjacência 50x50. Cada posição indica se duas pessoas são amigas. Mesmo parecendo grande, a matriz cabe em poucas centenas de bytes (50 × 50 = 2500 entradas) e evita estruturas extras. Em uma rede tão conectada, quase todas as entradas seriam usadas, então a matriz aproveita bem a memória e deixa operações como verificar amizade muito rápidas (acesso direto).
+
+2) Rede esparsa com 1 milhão de usuários  
+Aqui uma matriz seria inviável: seriam 10¹² posições, ou seja, terabytes desperdiçados com zeros. O melhor é usar uma lista de adjacência (por exemplo, dicionário onde cada usuário guarda uma lista de amigos). Com poucas dezenas de amigos por usuário, o total de registros é proporcional ao número real de amizades, economizando memória. As operações também ficam mais rápidas porque ao listar amigos ou percorrer a rede eu só caminho pelos vizinhos reais de cada vértice, sem pular milhões de posições vazias.
+
+3) Medir quão próximo x está de y na rede  
+Podemos medir a distância em graus de separação, ou seja, o menor número de saltos de amizade entre x e y. Em um grafo não ponderado isso é o mesmo que o menor caminho entre dois vértices. O algoritmo clássico é a busca em largura (BFS): começamos em x, visitamos seus amigos, depois os amigos dos amigos, e assim por diante usando uma fila até encontrar y. O nível da BFS em que y aparece é a distância mínima. Se y nunca aparece, não existe caminho.
