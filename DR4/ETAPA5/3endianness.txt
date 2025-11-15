@@ -1,0 +1,29 @@
+# Demonstração prática de ENDIANNESS em Python
+# "Endianness" é a ordem dos bytes usados para representar um número na memória.
+# A rede (TCP/IP) usa sempre a ordem BIG-ENDIAN, também chamada de "network byte order".
+
+import socket   # fornece funções htons(), htonl(), etc. (host <-> network)
+import struct   # permite empacotar valores em bytes com endianness explícita
+
+# Exibe o valor 1234 em ordem do host (como o sistema o armazena internamente)
+print("1234 host order:", 1234)
+# Aqui ainda não há conversão — apenas mostra o valor decimal.
+
+# Converte o número 1234 (0x04D2) da ordem do host para a ordem da rede (BIG-ENDIAN)
+# htons = "host to network short" (16 bits)
+print("1234 network order (htons):", socket.htons(1234))
+# Em máquinas little-endian (como PCs x86), o valor 1234 vira 53764,
+# porque os bytes são trocados de posição: 0x04D2 → 0xD204.
+
+# Empacota o mesmo valor 1234 em bytes no formato de rede (big-endian)
+# '!H' significa:
+#   !  -> network byte order (BIG-ENDIAN)
+#   H  -> unsigned short (16 bits)
+print("pack network '!H':", struct.pack("!H", 1234))
+# Saída esperada: b'\x04\xd2' (dois bytes 04 D2 em hexadecimal)
+
+# Comentário explicativo:
+# A rede usa big-endian ("network byte order") para garantir que todas as máquinas
+# — independentemente de sua arquitetura interna (Intel = little-endian, ARM pode ser big-endian) —
+# interpretem os números multibyte (como portas, endereços, tamanhos) da mesma forma.
+
