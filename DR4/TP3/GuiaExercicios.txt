@@ -1,0 +1,16 @@
+Exercício 1 - Slides da Etapa 5
+Exercício 2 - Script: 1getaddrinfo.txt
+Exercício 3 - Script: 2timeout.txt
+Exercício 4 - Script: 3endianness.txt (trocar porta 1234 de exemplo por 8080)
+Exercício 5 - Script: 4echotcpservidorsimples.txt (trocar porta 9090 de exemplo por 5000)
+Exercício 6 - Script: 5clientetcpreconexao.txt
+Exercício 7 - Script: 6echoudpservidor.txt (para o servidor) e 7echoudpcliente.txt (para o cliente)
+Exercício 8 - Script: 8servidor_threads.txt
+Exercício 9 - Script: 9httpmin.txt
+Exercício 10 - Script: 10httpstatic.txt
+Exercício 11 - Script: 11httproutes.txt
+Exercício 12 - Script: 12httpserver.txt
+Exercício 13 - Slides da Etapa 6 - Gerar chave e certificado
+Exercício 14 - Script: 13tls_server.txt
+Exercício 15 - Testar com curl
+Exercício 16 - Script: 14tls_hardening.txt
