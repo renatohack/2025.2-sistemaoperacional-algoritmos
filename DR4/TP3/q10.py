@@ -1,5 +1,5 @@
 import socket, os
-HOST, PORT = "0.0.0.0", 9091
+HOST, PORT = "0.0.0.0", 8080
 def make_resp(status, body: bytes, ctype="text/plain; charset=utf-8"):
     return (f"HTTP/1.1 {status}\r\n"
             f"Content-Type: {ctype}\r\n"

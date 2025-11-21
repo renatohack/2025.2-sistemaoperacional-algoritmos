@@ -3,7 +3,7 @@ import json
 import datetime
 from zoneinfo import ZoneInfo  # Python 3.9+
 
-HOST, PORT = "0.0.0.0", 9092
+HOST, PORT = "0.0.0.0", 8080
 
 def now_sao_paulo_iso() -> str:
     tz = ZoneInfo("America/Sao_Paulo")

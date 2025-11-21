@@ -1,6 +1,6 @@
 import socket
 
-HOST, PORT = "0.0.0.0", 9090 
+HOST, PORT = "0.0.0.0", 8080 
 RESPONSE = (b"HTTP/1.1 200 OK\r\n"
             b"Content-Type: text/plain; charset=utf-8\r\n"
             b"Content-Length: 12\r\n"

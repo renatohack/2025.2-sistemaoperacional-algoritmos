@@ -1,6 +1,6 @@
 
 import socket
-HOST, PORT = "0.0.0.0", 7000
+HOST, PORT = "0.0.0.0", 6000
 with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
     s.bind((HOST, PORT))
     print(f"UDP em {HOST}:{PORT}")

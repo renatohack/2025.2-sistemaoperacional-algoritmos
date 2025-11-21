@@ -1,6 +1,6 @@
 import socket, ssl
 
-HOST, PORT = "0.0.0.0", 9443
+HOST, PORT = "0.0.0.0", 8443
 
 # 1 - Cria contexto TLS seguro
 ctx = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)

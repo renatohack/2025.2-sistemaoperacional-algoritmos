@@ -1,5 +1,5 @@
 import socket, threading
-HOST, PORT = "0.0.0.0", 5001
+HOST, PORT = "0.0.0.0", 5000
 def handle(conn, addr):
     with conn:
         print("Conectado", addr)

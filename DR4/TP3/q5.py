@@ -1,5 +1,5 @@
 import socket, signal, sys
-HOST, PORT = "0.0.0.0", 9090
+HOST, PORT = "0.0.0.0", 5000
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as srv:
     srv.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     srv.bind((HOST, PORT))
